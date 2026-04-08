@@ -1,6 +1,8 @@
 import React from "react";
 import "./ProductCard.css";
 
+const BACKEND_URL = (process.env.REACT_APP_BACKEND_URL || "").trim();
+
 function ProductCard({ product, onAddToCart }) {
   const getImageUrl = (image) => {
     if (!image) {
@@ -12,10 +14,10 @@ function ProductCard({ product, onAddToCart }) {
     }
 
     if (image.startsWith("/uploads")) {
-      return `http://localhost:5000${image}`;
+      return BACKEND_URL ? `${BACKEND_URL}${image}` : image;
     }
 
-    return `http://localhost:5000/uploads/${image}`;
+    return BACKEND_URL ? `${BACKEND_URL}/uploads/${image}` : `/uploads/${image}`;
   };
 
   return (

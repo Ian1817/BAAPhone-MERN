@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import ProductCard from "./components/ProductCard";
 import heroImage from "./assets/ip17.jpg";
 
-const BACKEND_URL = "http://localhost:5000";
+const BACKEND_URL = (process.env.REACT_APP_BACKEND_URL || "").trim();
 
 function App() {
   const [products, setProducts] = useState([]);

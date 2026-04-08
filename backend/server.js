@@ -12,7 +12,7 @@ const fs = require("fs");
 dotenv.config();
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(express.json());
@@ -47,6 +47,11 @@ const storage = multer.diskStorage({
 });
 
 const upload = multer({ storage });
+
+// test route
+app.get("/", (req, res) => {
+  res.send("BAPhone backend is running");
+});
 
 // mở trang admin từ backend
 app.get("/admin", (req, res) => {
@@ -88,7 +93,7 @@ app.post("/api/products", upload.single("image"), async (req, res) => {
     }
 
     const imageUrl = req.file
-      ? `http://localhost:5000/uploads/${req.file.filename}`
+      ? `/uploads/${req.file.filename}`
       : "https://via.placeholder.com/300";
 
     const product = new Product({
@@ -116,6 +121,6 @@ app.delete("/api/products/:id", async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}`);
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Server running on port ${PORT}`);
 });
