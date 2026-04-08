@@ -1,7 +1,5 @@
-node_modules/
-backend/node_modules/
-frontend-react/node_modules/
+node_modules
 .env
-uploads/
-build/
-dist/
+uploads
+dist
+build
