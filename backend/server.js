@@ -21,7 +21,7 @@ app.use(express.urlencoded({ extended: true }));
 // tạo folder uploads
 const uploadPath = path.join(__dirname, "uploads");
 if (!fs.existsSync(uploadPath)) {
-  fs.mkdirSync(uploadPath);
+  fs.mkdirSync(uploadPath, { recursive: true });
 }
 
 // load ảnh
@@ -49,8 +49,8 @@ const storage = multer.diskStorage({
 const upload = multer({ storage });
 
 // test route
-app.get("/", (req, res) => {
-  res.send("BAPhone backend is running");
+app.get("/api/health", (req, res) => {
+  res.json({ message: "BAPhone backend is running" });
 });
 
 // mở trang admin từ backend
@@ -75,10 +75,7 @@ app.post("/api/products", upload.single("image"), async (req, res) => {
       return res.status(400).json({ error: "Thiếu tên hoặc giá sản phẩm" });
     }
 
-    let priceInput = (req.body.price + "")
-      .replace(/,/g, "")
-      .trim()
-      .toLowerCase();
+    let priceInput = String(req.body.price).replace(/,/g, "").trim().toLowerCase();
 
     if (priceInput.includes("triệu")) {
       priceInput = parseFloat(priceInput) * 1000000;
@@ -120,6 +117,36 @@ app.delete("/api/products/:id", async (req, res) => {
     res.status(500).json({ error: err.message });
   }
 });
+
+// serve frontend build React
+const frontendBuildPath = path.join(__dirname, "..", "frontend-react", "build");
+const frontendIndexPath = path.join(frontendBuildPath, "index.html");
+
+if (fs.existsSync(frontendBuildPath)) {
+  app.use(express.static(frontendBuildPath));
+
+  app.use((req, res, next) => {
+    if (req.method !== "GET") return next();
+
+    if (
+      req.path.startsWith("/api") ||
+      req.path.startsWith("/uploads") ||
+      req.path === "/admin"
+    ) {
+      return next();
+    }
+
+    if (fs.existsSync(frontendIndexPath)) {
+      return res.sendFile(frontendIndexPath);
+    }
+
+    next();
+  });
+} else {
+  app.get("/", (req, res) => {
+    res.send("BAPhone backend is running");
+  });
+}
 
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`Server running on port ${PORT}`);
