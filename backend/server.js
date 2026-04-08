@@ -1,6 +1,3 @@
-const dns = require("dns");
-dns.setServers(["1.1.1.1", "1.0.0.1"]);
-
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
@@ -9,34 +6,30 @@ const multer = require("multer");
 const path = require("path");
 const fs = require("fs");
 
-dotenv.config();
+// Luôn đọc đúng file .env trong thư mục backend
+dotenv.config({ path: path.join(__dirname, ".env") });
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// Middleware
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// tạo folder uploads
+// Tạo folder uploads
 const uploadPath = path.join(__dirname, "uploads");
 if (!fs.existsSync(uploadPath)) {
   fs.mkdirSync(uploadPath, { recursive: true });
 }
 
-// load ảnh
+// Public folder ảnh
 app.use("/uploads", express.static(uploadPath));
 
-// connect MongoDB
-mongoose
-  .connect(process.env.MONGO_URI)
-  .then(() => console.log("MongoDB connected"))
-  .catch((err) => console.log("MongoDB error:", err));
-
-// model
+// Model
 const Product = require("./models/Product");
 
-// upload config
+// Upload config
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
     cb(null, uploadPath);
@@ -48,12 +41,12 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage });
 
-// test route
+// Health check
 app.get("/api/health", (req, res) => {
   res.json({ message: "BAPhone backend is running" });
 });
 
-// mở trang admin từ backend
+// Admin page
 app.get("/admin", (req, res) => {
   res.sendFile(path.join(__dirname, "admin.html"));
 });
@@ -64,6 +57,7 @@ app.get("/api/products", async (req, res) => {
     const products = await Product.find().sort({ _id: -1 });
     res.json(products);
   } catch (err) {
+    console.log("GET /api/products error:", err);
     res.status(500).json({ error: err.message });
   }
 });
@@ -114,20 +108,19 @@ app.delete("/api/products/:id", async (req, res) => {
     await Product.findByIdAndDelete(req.params.id);
     res.json({ message: "Đã xóa" });
   } catch (err) {
+    console.log("DELETE /api/products/:id error:", err);
     res.status(500).json({ error: err.message });
   }
 });
 
-// serve frontend build React
+// Serve frontend build
 const frontendBuildPath = path.join(__dirname, "..", "frontend-react", "build");
 const frontendIndexPath = path.join(frontendBuildPath, "index.html");
 
 if (fs.existsSync(frontendBuildPath)) {
   app.use(express.static(frontendBuildPath));
 
-  app.use((req, res, next) => {
-    if (req.method !== "GET") return next();
-
+  app.get("*", (req, res, next) => {
     if (
       req.path.startsWith("/api") ||
       req.path.startsWith("/uploads") ||
@@ -136,11 +129,7 @@ if (fs.existsSync(frontendBuildPath)) {
       return next();
     }
 
-    if (fs.existsSync(frontendIndexPath)) {
-      return res.sendFile(frontendIndexPath);
-    }
-
-    next();
+    res.sendFile(frontendIndexPath);
   });
 } else {
   app.get("/", (req, res) => {
@@ -148,6 +137,26 @@ if (fs.existsSync(frontendBuildPath)) {
   });
 }
 
-app.listen(PORT, "0.0.0.0", () => {
-  console.log(`Server running on port ${PORT}`);
-});
+// Start server chỉ sau khi MongoDB kết nối thành công
+async function startServer() {
+  try {
+    if (!process.env.MONGO_URI) {
+      throw new Error("Thiếu MONGO_URI. Hãy thêm vào Replit Secrets hoặc backend/.env");
+    }
+
+    await mongoose.connect(process.env.MONGO_URI, {
+      serverSelectionTimeoutMS: 10000,
+    });
+
+    console.log("MongoDB connected");
+
+    app.listen(PORT, "0.0.0.0", () => {
+      console.log(`Server running on port ${PORT}`);
+    });
+  } catch (err) {
+    console.log("MongoDB error:", err);
+    process.exit(1);
+  }
+}
+
+startServer();
