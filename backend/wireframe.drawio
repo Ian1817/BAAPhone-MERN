@@ -1,0 +1,169 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0">
+  <diagram id="wireframe-uiux" name="Wireframe 3 Màn Hình CSAT">
+    <mxGraphModel dx="1515" dy="826" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1650" pageHeight="950" background="#f1f5f9" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;fontColor=#0f172a;" value="SMART CRM MEKONG MOBILE — GIAO DIỆN 3 MÀN HÌNH CHÍNH (LUỒNG L8: KHẢO SÁT CSAT)" vertex="1">
+          <mxGeometry height="40" width="1450" x="100" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="m1_bg" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;strokeWidth=2;shadow=1;" value="" vertex="1">
+          <mxGeometry height="720" width="420" x="80" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="m1_header" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2563eb;fontColor=#ffffff;fontStyle=1;fontSize=14;align=center;" value="M1: FORM KHẢO SÁT CSAT (Khách hàng)" vertex="1">
+          <mxGeometry height="55" width="420" x="80" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="m1_card" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8fafc;strokeColor=#e2e8f0;strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="135" width="370" x="105" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="m1_info" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#334155;spacingLeft=10;" value="&lt;b style=&#39;font-size:13px;&#39;&gt;Mã phiếu:&lt;/b&gt; WT-2026-1052&lt;br&gt;&lt;b style=&#39;font-size:13px;&#39;&gt;Thiết bị:&lt;/b&gt; iPhone 13 Pro Max&lt;br&gt;&lt;b style=&#39;font-size:13px;&#39;&gt;KTV xử lý:&lt;/b&gt; Nguyễn Văn A" vertex="1">
+          <mxGeometry height="70" width="350" x="115" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="m1_badge" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dcfce7;strokeColor=#86efac;fontColor=#15803d;fontStyle=1;fontSize=11;align=center;" value="Trạng thái: ĐÃ ĐÓNG (Hoàn tất)" vertex="1">
+          <mxGeometry height="32" width="210" x="125" y="242" as="geometry" />
+        </mxCell>
+        <mxCell id="m1_lbl_rating" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#0f172a;" value="Mức độ hài lòng của quý khách?" vertex="1">
+          <mxGeometry height="25" width="370" x="105" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="m1_stars" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=32;fontStyle=1;fontColor=#eab308;" value="★  ★  ★  ★  ★" vertex="1">
+          <mxGeometry height="45" width="370" x="105" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="m1_score" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;fontColor=#16a34a;" value="5/5 — Rất hài lòng" vertex="1">
+          <mxGeometry height="20" width="370" x="105" y="388" as="geometry" />
+        </mxCell>
+        <mxCell id="m1_lbl_comment" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;fontColor=#334155;" value="Ý kiến đóng góp thêm (không bắt buộc):" vertex="1">
+          <mxGeometry height="20" width="370" x="105" y="425" as="geometry" />
+        </mxCell>
+        <mxCell id="m1_input" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8fafc;strokeColor=#cbd5e1;strokeWidth=1.5;align=left;verticalAlign=top;spacing=12;fontSize=12;fontColor=#475569;" value="Kỹ thuật viên nhiệt tình, xử lý nhanh chóng..." vertex="1">
+          <mxGeometry height="120" width="370" x="105" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="m1_btn" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2563eb;fontColor=#ffffff;fontStyle=1;fontSize=14;align=center;shadow=1;" value="GỬI ĐÁNH GIÁ" vertex="1">
+          <mxGeometry height="48" width="370" x="105" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="m1_note_box" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fef2f2;strokeColor=#fca5a5;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="38" width="370" x="105" y="655" as="geometry" />
+        </mxCell>
+        <mxCell id="m1_note" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontStyle=1;fontColor=#dc2626;" value="* Kiểm tra quy tắc QT-10: Chỉ gửi được khi phiếu ĐÃ_ĐÓNG" vertex="1">
+          <mxGeometry height="38" width="370" x="105" y="655" as="geometry" />
+        </mxCell>
+        <mxCell id="m2_bg" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;strokeWidth=2;shadow=1;" value="" vertex="1">
+          <mxGeometry height="720" width="480" x="540" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="m2_header" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1;fontSize=14;align=center;" value="M2: BÁO CÁO CSAT THEO KTV (Quản lý)" vertex="1">
+          <mxGeometry height="55" width="480" x="540" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="m2_filters" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#334155;fontStyle=1;" value="Kỳ báo cáo: [ Tháng 10/2026 ▼ ]   Trạm: [ Cần Thơ 1 ▼ ]   [ XEM ]" vertex="1">
+          <mxGeometry height="30" width="440" x="560" y="145" as="geometry" />
+        </mxCell>
+        <mxCell id="m2_kpi1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8fafc;strokeColor=#e2e8f0;strokeWidth=1.5;fontSize=11;fontColor=#64748b;" value="Tổng phiếu đóng&lt;br&gt;&lt;b style=&#39;font-size:18px;color:#0f172a;&#39;&gt;1,250&lt;/b&gt;" vertex="1">
+          <mxGeometry height="65" width="130" x="560" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="m2_kpi2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8fafc;strokeColor=#e2e8f0;strokeWidth=1.5;fontSize=11;fontColor=#64748b;" value="Lượt khảo sát&lt;br&gt;&lt;b style=&#39;font-size:18px;color:#2563eb;&#39;&gt;890 &lt;span style=&#39;font-size:11px;color:#16a34a;&#39;&gt;(71%)&lt;/span&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="65" width="130" x="715" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="m2_kpi3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fefce8;strokeColor=#fef08a;strokeWidth=1.5;fontSize=11;fontColor=#854d0e;" value="CSAT Trung bình&lt;br&gt;&lt;b style=&#39;font-size:18px;color:#ca8a04;&#39;&gt;4.6 / 5.0 ★&lt;/b&gt;" vertex="1">
+          <mxGeometry height="65" width="130" x="870" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="m2_tbl_title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;fontColor=#0f172a;" value="BẢNG XẾP HẠNG ĐIỂM CSAT KĨ THUẬT VIÊN" vertex="1">
+          <mxGeometry height="20" width="440" x="560" y="265" as="geometry" />
+        </mxCell>
+        <mxCell id="m2_th" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1e293b;fontColor=#ffffff;fontStyle=1;fontSize=11;align=center;" value="Mã KTV  |  Họ tên KTV  |  Số phiếu  |  Khảo sát  |  Điểm CSAT" vertex="1">
+          <mxGeometry height="32" width="440" x="560" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="m2_tr1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8fafc;strokeColor=#e2e8f0;fontSize=11;fontColor=#334155;align=center;" value="KTV01   |   Nguyễn Văn A   |   120   |   95   |   4.8 ★ (88%)" vertex="1">
+          <mxGeometry height="32" width="440" x="560" y="322" as="geometry" />
+        </mxCell>
+        <mxCell id="m2_tr2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#e2e8f0;fontSize=11;fontColor=#334155;align=center;" value="KTV02   |   Trần Thị B       |   110   |   80   |   4.6 ★ (82%)" vertex="1">
+          <mxGeometry height="32" width="440" x="560" y="354" as="geometry" />
+        </mxCell>
+        <mxCell id="m2_tr3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8fafc;strokeColor=#e2e8f0;fontSize=11;fontColor=#334155;align=center;" value="KTV03   |   Lê Hoàng C      |   95    |   60   |   4.2 ★ (70%)" vertex="1">
+          <mxGeometry height="32" width="440" x="560" y="386" as="geometry" />
+        </mxCell>
+        <mxCell id="m2_tr4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#e2e8f0;fontSize=11;fontColor=#334155;align=center;" value="KTV04   |   Phạm Minh D     |   105   |   75   |   4.5 ★ (78%)" vertex="1">
+          <mxGeometry height="32" width="440" x="560" y="418" as="geometry" />
+        </mxCell>
+        <mxCell id="m2_chart_bg" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8fafc;strokeColor=#cbd5e1;strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="315" width="440" x="560" y="465" as="geometry" />
+        </mxCell>
+        <mxCell id="m2_chart_title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;fontColor=#0f172a;" value="BIỂU ĐỒ SO SÁNH ĐIỂM CSAT TRUNG BÌNH" vertex="1">
+          <mxGeometry height="25" width="440" x="560" y="475" as="geometry" />
+        </mxCell>
+        <mxCell id="bar1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#22c55e;fontColor=#ffffff;fontStyle=1;fontSize=11;verticalAlign=top;spacingTop=6;" value="4.8" vertex="1">
+          <mxGeometry height="210" width="50" x="610" y="515" as="geometry" />
+        </mxCell>
+        <mxCell id="bar1_lbl" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=11;fontStyle=1;fontColor=#334155;" value="KTV01" vertex="1">
+          <mxGeometry height="20" width="50" x="610" y="732" as="geometry" />
+        </mxCell>
+        <mxCell id="bar2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#3b82f6;fontColor=#ffffff;fontStyle=1;fontSize=11;verticalAlign=top;spacingTop=6;" value="4.6" vertex="1">
+          <mxGeometry height="190" width="50" x="710" y="535" as="geometry" />
+        </mxCell>
+        <mxCell id="bar2_lbl" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=11;fontStyle=1;fontColor=#334155;" value="KTV02" vertex="1">
+          <mxGeometry height="20" width="50" x="710" y="732" as="geometry" />
+        </mxCell>
+        <mxCell id="bar3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f59e0b;fontColor=#ffffff;fontStyle=1;fontSize=11;verticalAlign=top;spacingTop=6;" value="4.2" vertex="1">
+          <mxGeometry height="150" width="50" x="810" y="575" as="geometry" />
+        </mxCell>
+        <mxCell id="bar3_lbl" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=11;fontStyle=1;fontColor=#334155;" value="KTV03" vertex="1">
+          <mxGeometry height="20" width="50" x="810" y="732" as="geometry" />
+        </mxCell>
+        <mxCell id="bar4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#3b82f6;fontColor=#ffffff;fontStyle=1;fontSize=11;verticalAlign=top;spacingTop=6;" value="4.5" vertex="1">
+          <mxGeometry height="180" width="50" x="910" y="545" as="geometry" />
+        </mxCell>
+        <mxCell id="bar4_lbl" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=11;fontStyle=1;fontColor=#334155;" value="KTV04" vertex="1">
+          <mxGeometry height="20" width="50" x="910" y="732" as="geometry" />
+        </mxCell>
+        <mxCell id="m3_bg" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;strokeWidth=2;shadow=1;" value="" vertex="1">
+          <mxGeometry height="720" width="460" x="1060" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="m3_header" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1;fontSize=14;align=center;" value="M3: DANH SÁCH &amp; LỌC PHẢN HỒI (Quản lý)" vertex="1">
+          <mxGeometry height="55" width="460" x="1060" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="m3_filter_lbl" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#334155;" value="Lọc sao:" vertex="1">
+          <mxGeometry height="30" width="55" x="1080" y="148" as="geometry" />
+        </mxCell>
+        <mxCell id="f_all" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1;fontSize=11;" value="Tất cả" vertex="1">
+          <mxGeometry height="30" width="50" x="1140" y="148" as="geometry" />
+        </mxCell>
+        <mxCell id="f1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fee2e2;strokeColor=#fca5a5;fontColor=#dc2626;fontStyle=1;fontSize=11;" value="1 ★" vertex="1">
+          <mxGeometry height="30" width="45" x="1196" y="148" as="geometry" />
+        </mxCell>
+        <mxCell id="f2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fef3c7;strokeColor=#fcd34d;fontColor=#d97706;fontStyle=1;fontSize=11;" value="2 ★" vertex="1">
+          <mxGeometry height="30" width="45" x="1246" y="148" as="geometry" />
+        </mxCell>
+        <mxCell id="f3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f1f5f9;strokeColor=#cbd5e1;fontColor=#475569;fontSize=11;" value="3 ★" vertex="1">
+          <mxGeometry height="30" width="45" x="1296" y="148" as="geometry" />
+        </mxCell>
+        <mxCell id="f4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f1f5f9;strokeColor=#cbd5e1;fontColor=#475569;fontSize=11;" value="4 ★" vertex="1">
+          <mxGeometry height="30" width="45" x="1346" y="148" as="geometry" />
+        </mxCell>
+        <mxCell id="f5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dcfce7;strokeColor=#86efac;fontColor=#15803d;fontStyle=1;fontSize=11;" value="5 ★" vertex="1">
+          <mxGeometry height="30" width="45" x="1396" y="148" as="geometry" />
+        </mxCell>
+        <mxCell id="m3_th" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1e293b;fontColor=#ffffff;fontStyle=1;fontSize=11;align=center;" value="Mã phiếu  |  SĐT Khách  |  Điểm  |  Ý kiến nhận xét  |  Ngày gửi" vertex="1">
+          <mxGeometry height="32" width="420" x="1080" y="195" as="geometry" />
+        </mxCell>
+        <mxCell id="m3_r1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#e2e8f0;fontSize=11;fontColor=#334155;align=center;" value="WT-1052  |  090xxxx123  |  5 ★  |  KTV nhiệt tình, sửa nhanh  |  04/10/2026" vertex="1">
+          <mxGeometry height="42" width="420" x="1080" y="227" as="geometry" />
+        </mxCell>
+        <mxCell id="m3_r2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8fafc;strokeColor=#e2e8f0;fontSize=11;fontColor=#334155;align=center;" value="WT-1049  |  098xxxx456  |  4 ★  |  Sửa nhanh, máy chạy êm  |  04/10/2026" vertex="1">
+          <mxGeometry height="42" width="420" x="1080" y="269" as="geometry" />
+        </mxCell>
+        <mxCell id="m3_r3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fef2f2;strokeColor=#fca5a5;fontSize=11;fontColor=#dc2626;fontStyle=1;align=center;" value="WT-1033  |  091xxxx789  |  2 ★  |  Chờ nhận máy hơi lâu...    |  03/10/2026" vertex="1">
+          <mxGeometry height="42" width="420" x="1080" y="311" as="geometry" />
+        </mxCell>
+        <mxCell id="m3_r4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#e2e8f0;fontSize=11;fontColor=#334155;align=center;" value="WT-1020  |  093xxxx111  |  5 ★  |  Rất hài lòng dịch vụ          |  02/10/2026" vertex="1">
+          <mxGeometry height="42" width="420" x="1080" y="353" as="geometry" />
+        </mxCell>
+        <mxCell id="m3_r5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8fafc;strokeColor=#e2e8f0;fontSize=11;fontColor=#334155;align=center;" value="WT-1011  |  097xxxx222  |  3 ★  |  Giá linh kiện hơi cao         |  01/10/2026" vertex="1">
+          <mxGeometry height="42" width="420" x="1080" y="395" as="geometry" />
+        </mxCell>
+        <mxCell id="m3_mask_note" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0fdf4;strokeColor=#bbf7d0;fontColor=#166534;fontStyle=1;fontSize=11;align=center;" value="🔒 Đã mã hóa che số điện thoại khách hàng (NFR2 Security)" vertex="1">
+          <mxGeometry height="38" width="420" x="1080" y="455" as="geometry" />
+        </mxCell>
+        <mxCell id="m3_pager" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontColor=#64748b;" value="&lt; Trang trước   [ 1 ]   2   3   4   5   Trang sau &gt;   (20 dòng / trang)" vertex="1">
+          <mxGeometry height="30" width="420" x="1080" y="725" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
